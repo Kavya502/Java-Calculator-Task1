@@ -20,7 +20,7 @@ public class Calculator {
     // Method for Division
     public static double divide(double a, double b) {
         if (b == 0) {
-            System.out.println("⚠ Error: Cannot divide by zero.");
+            System.out.println("Error: Cannot divide by zero.");
             return Double.NaN;
         }
         return a / b;
@@ -30,7 +30,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         boolean keepRunning = true;
 
-        System.out.println("🧮 Welcome to Java Console Calculator");
+        System.out.println("Welcome to Java Console Calculator");
 
         while (keepRunning) {
             System.out.println("\nChoose an operation:");
@@ -45,7 +45,7 @@ public class Calculator {
 
             if (choice == 5) {
                 keepRunning = false;
-                System.out.println("👋 Exiting Calculator. Thank you!");
+                System.out.println("Exiting Calculator. Thank you!");
                 break;
             }
 
@@ -70,14 +70,15 @@ public class Calculator {
                     result = divide(num1, num2);
                     break;
                 default:
-                    System.out.println("❌ Invalid choice. Please select 1–5.");
+                    System.out.println("Invalid choice. Please select 1–5.");
                     continue;
             }
 
-            System.out.println("✅ Result: " + result);
+            System.out.println("Result: " + result);
         }
 
         scanner.close();
     }
 }
+
 
